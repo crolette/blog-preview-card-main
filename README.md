@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./images/screenshot.png)
 
 ### Links
 
@@ -39,6 +39,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties and nesting
+- upload to Git directly via GitHub in VS Code
 
 ### What I learned
 
