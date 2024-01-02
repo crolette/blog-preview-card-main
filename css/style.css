@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  row-gap: 16px;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background-color: var(--yellow);
+}
+
+/* CARD */
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 385px;
+  background-color: var(--white);
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  box-shadow: 8px 8px var(--black);
+
+  img.card__illustration {
+    border-radius: 10px;
+  }
+
+  .card__tag {
+    display: inline;
+    align-self: flex-start;
+    background-color: var(--yellow);
+    font-weight: 800;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .card__date {
+    font-size: 0.9em;
+  }
+
+  .card__title {
+    color: inherit;
+    font-size: 1.4em;
+    font-weight: 800;
+
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+
+  .card__description {
+    color: var(--grey);
+    line-height: 1.5em;
+  }
+
+  .card__author {
+    display: flex;
+    align-items: center;
+    & img {
+      width: 30px;
+      margin-right: 16px;
+    }
+
+    & a {
+      font-weight: 800;
+      font-size: 0.9em;
+    }
+  }
+}
+
+/* FOOTER LOGO CROLWEB */
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer__logo {
+  img {
+    width: 50px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 640px) {
+  .card {
+    min-width: auto;
+    max-width: 320px;
+  }
+}
